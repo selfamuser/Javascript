@@ -1,10 +1,10 @@
 
 const arr = [1,2,3,4,5,6];
 
-const arr1 = arr;
-console.log(arr1);
-arr1[4] = 30;
-console.log(arr);
+// const arr1 = arr;
+// console.log(arr1);
+// arr1[4] = 30;
+// console.log(arr);
 
  /*
 
@@ -42,5 +42,10 @@ myArr.includes(5);
 myArr.indexOf(4);
 
 
+//to add all elements of array in string
 
-console.log(myArr + myArr2);
+const str = myArr.join(); //return string
+
+console.log(typeof str);
+
+
