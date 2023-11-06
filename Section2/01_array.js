@@ -46,6 +46,64 @@ myArr.indexOf(4);
 
 const str = myArr.join(); //return string
 
-console.log(typeof str);
+console.log(typeof str); 
+
+
+/*
+
+    MORE ABOUT ARRAYS
+
+*/
+
+
+const marvel = ["Ironman","Thor","Black Panther","Captain America"];
+const dcHeros = ["Batman","Superman","Wonder Woman"];
+
+//It can even take array as an element
+
+const comic = new Array();
+comic.push(marvel);
+comic.push(dcHeros);
+
+console.log(comic);
+
+
+
+//Concat of Array
+
+const allHero = marvel.concat(dcHeros);
+
+console.log(allHero);
+
+
+//SPREADING ARRAY
+
+const newHeros = [...marvel,...dcHeros];
+console.log(newHeros);
+
+
+//FLAT function
+
+//Ife we have arrays inside array and we want to make them all in single array we can use flat function.
+
+//Ex arr = [1,2,3,[4,5],6,7,[8,9,10,11],[12,13]];
+
+const exArr = [1,2,3,[4,5],6,7,[8,9,10,11],[12,13]];
+
+const flatArr = exArr.flat(Infinity);
+console.log(flatArr);
+
+
+/*
+  To make array of characters from string
+ */
+
+
+const myName = "Utkarsh Shukla"
+
+const nameArray = Array.from(myName);
+
+console.log(nameArray);
+
 
 
