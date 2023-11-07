@@ -1,23 +1,46 @@
-function calculatePrice(...num1){
-    return num1;
-}
+// function calculatePrice(...num1){
+//     return num1;
+// }
 
-console.log(calculatePrice(100,200,300));
+// console.log(calculatePrice(100,200,300));
 
 
-//We can pass object as a parameter in function
+// //We can pass object as a parameter in function
+
+
+// const user = {
+//     name : "Utkarsh",
+//     price : 10000,
+//     age : 24
+// }
+
+// function handleUser(newuser){
+
+//     console.log(`Username is ${newuser.name}`);
+
+// }
+
+// handleUser(user);
+
+
+//+++++Arrow Function+++++
 
 
 const user = {
     name : "Utkarsh",
     price : 10000,
-    age : 24
+    age : 24,
+    welcomeMessage : function(){
+        console.log(`Hello ${this.name} to the website`);
+    }
 }
 
-function handleUser(newuser){
+user.welcomeMessage();
 
-    console.log(`Username is ${newuser.name}`);
+user.name = "Sanchit"
 
-}
+user.welcomeMessage();
 
-handleUser(user);
+
+
+
