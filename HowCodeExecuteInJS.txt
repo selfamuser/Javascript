@@ -1,0 +1,62 @@
+
+1. Javascript is a synchronous single threaded language
+
+2. It can execute only ONE line of code at a time.
+
+3. Execution Context has two comnponents
+
+    a. Memory comnponent
+    b. Code Component
+
+4. There are two phases 
+
+    a. Memory Creation phases
+    b. Execution Phase
+
+Example:-
+
+Line 1      let val1 = 10  
+Line 2      let val2 = 20
+
+Line 3      function addNum(num1,num2){
+Line 4      let total = num1 + num2
+Line 5      return total
+            }
+
+Line 6      let result1 = addNum(val1, val2)
+Line 7      let result2 = addNum(2,3)
+
+
+
+
+Step 1 - Global Environment will be created
+         It will be assigned to "THIS" 
+
+Step 2 - Memory Phase
+         Memory will be assigned to variable
+         val1 -> undefined
+         val2 -> undefined
+         addNum -> full function definition
+         result1 -> undefined
+         result2 -> undefined
+
+Step 3 - Execution Phase
+         Values will be assigned as per code
+         val1 -> 10
+         val2 -> 20
+
+         When the execution will come to Line 3 
+         It is a function so new execution context will be created
+
+                a - Memory Phase
+                    val1 -> undefined
+                    val2 -> undefined
+                    total -> undefined
+
+                b - Execution Phase
+                    nums1 -> 10
+                    nums2 -> 20
+                    total -> 15
+
+        Note:- After the execution context is executed it is "deleted".
+        We will come back to our original execution context.
