@@ -97,6 +97,9 @@ for (const key in myGame) {
 
 // ++++++ For Each Loop +++++++
 
+//It never returns any value
+//To make it return a value we need to add a condition
+
 const month = ["jan","feb","mar","apr","jun"]
 
 
@@ -109,3 +112,19 @@ month.forEach(element => {
 month.forEach(function (mon){
     console.log(mon);
 })
+
+//Example --
+const myNum = [1,2,3,4,5,6,7,8,9]
+
+// const newNum = myNum.filter((num)=> {
+//     return num > 4
+// })
+
+const newNum = [];
+myNum.forEach((num) => {
+    if(num > 4){
+        newNum.push(num)
+    }
+})
+
+console.log((newNum));
