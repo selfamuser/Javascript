@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM TUTORIAL</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading">
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">
             DOM Learning Tutorial for placement.
         </h1>
         <p>
@@ -16,3 +22,35 @@
     </div>
 </body>
 </html>
+
+    <!-- 
+    1. To get an element by it's id we use
+    2. document.getElementById("idName");
+    3. We can even store the above expression in a variable and perform the various operations
+    4. Or we can directly add various attributes ahead of the expression 
+    5. Ex:-  const ans = document.getElementById("idName");
+    6. ans.style.backgroundColor = "red".....etc 
+    -->
+
+<!-- 
+    Difference between "innerText" and "innerContent ans "innerHTML"
+
+    In innerText we only get the material which is not hidden by some css property
+
+    In innerContent it gives us every material inside.
+
+    In innerHTML it gives back even tag also 
+-->
+
+
+<!-- 
+    document.querySelector('tag name');
+
+
+    document.querySelectorAll('Tag name')
+
+    It returns a "node list" which is like a array but not an array.
+    It uses forEach but not allows MAP
+
+
+ -->
